@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import image1 from '@/assets/images/IMG_1891.jpeg';
 import image2 from '@/assets/images/1711D8D8-8A57-492C-8718-5128296A00AA.jpeg';
@@ -41,6 +41,7 @@ import image44 from '@/assets/images/IMG_6641.jpeg';
 import image45 from '@/assets/images/IMG_6732.jpeg';
 import image46 from '@/assets/images/IMG_8830.jpeg';
 import image47 from '@/assets/images/IMG_9033.jpeg';
+import { useState } from 'react';
 
 const Gallery = () => {
   const imageList = [
@@ -87,21 +88,62 @@ const Gallery = () => {
     image47,
   ];
 
+  const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+
+  const openModal = (src: StaticImageData) => {
+    if (src.width > src.height) {
+      setWidth(src.height * (600 / src.width));
+      setHeight(600);
+    } else {
+      setWidth(src.width * (600 / src.height));
+      setHeight(600);
+    }
+    setSelectedImage(src);
+  };
+  const closeModal = () => {
+    setWidth(0);
+    setHeight(0);
+    setSelectedImage(null);
+  };
+
   return (
-    <div className='columns-2 md:columns-3 lg:columns-3 gap-4 px-4 py-8 mx-20'>
+    <div className='columns-3 gap-4 px-4 py-8 mx-20'>
       {imageList.map((src, index) => (
-        <div key={index} className='mb-4 break-inside-avoid'>
+        <div
+          key={index}
+          className='mb-4 break-inside-avoid cursor-pointer'
+          onClick={() => openModal(src)}
+        >
           <Image
             src={src}
             alt={`Gallery Image ${index + 1}`}
-            width={500} // Adjust width based on image size
-            height={Math.random() * 400 + 200} // Random height for variety
+            width={src.width} // Adjust width based on image size
+            height={src.height} // Random height for variety
             layout='responsive'
             objectFit='cover'
             className='rounded-lg shadow-md'
+            loading='lazy'
           />
         </div>
       ))}
+      {/* Modal for Large Image View */}
+      {selectedImage && (
+        <div
+          className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75'
+          onClick={closeModal}
+        >
+          <Image
+            src={selectedImage}
+            width={width} // Adjust width based on image size
+            height={height}
+            alt='Large View'
+            objectFit='contain'
+            className='rounded-lg'
+          />
+        </div>
+      )}
     </div>
   );
 };
