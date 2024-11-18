@@ -19,7 +19,6 @@ import image18 from '@/assets/images/IMG_2473.jpeg';
 import image19 from '@/assets/images/IMG_2608.jpeg';
 import image20 from '@/assets/images/IMG_2739.jpg';
 import image21 from '@/assets/images/IMG_2883.jpeg';
-import image22 from '@/assets/images/IMG_3249.jpeg';
 import image23 from '@/assets/images/IMG_3527.jpeg';
 import image24 from '@/assets/images/IMG_3655.jpeg';
 import image25 from '@/assets/images/IMG_3897.jpeg';
@@ -34,7 +33,6 @@ import image33 from '@/assets/images/IMG_5609.jpeg';
 import image35 from '@/assets/images/IMG_5811.jpeg';
 import image36 from '@/assets/images/IMG_5883.jpeg';
 import image37 from '@/assets/images/IMG_5940.jpeg';
-import image38 from '@/assets/images/IMG_5941.jpeg';
 import image39 from '@/assets/images/IMG_5975.jpeg';
 import image41 from '@/assets/images/IMG_6100.jpeg';
 import image42 from '@/assets/images/IMG_6279.jpeg';
@@ -65,7 +63,6 @@ const Gallery = () => {
     image19,
     image20,
     image21,
-    image22,
     image23,
     image24,
     image25,
@@ -80,7 +77,6 @@ const Gallery = () => {
     image35,
     image36,
     image37,
-    image38,
     image39,
     image41,
     image42,
