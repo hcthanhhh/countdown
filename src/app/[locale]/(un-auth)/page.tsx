@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* Timeline */}
       <section className='mb-12'>
-        <h2 className='text-2xl font-semibold text-pink-600 mb-4'>Our Journey</h2>
+        <h2 className='text-2xl font-semibold text-pink-600 mb-4 text-center'>Our Journey</h2>
         <ul className='space-y-2 text-gray-700'>
           <li>📅 First Date: February 3rd, 2022</li>
           <li>❤️ First "I Love You": February 19th, 2022</li>
@@ -86,7 +86,9 @@ export default function Home() {
 
       {/* Reasons I Love You */}
       <section className='mb-12'>
-        <h2 className='text-2xl font-semibold text-pink-600 mb-4'>Reasons I Love You</h2>
+        <h2 className='text-2xl font-semibold text-pink-600 mb-4 text-center'>
+          Reasons I Love You
+        </h2>
         <div className='flex flex-wrap justify-center gap-4'>
           {reasons.map((reason, index) => (
             <div

@@ -109,7 +109,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className='columns-3 gap-4 px-4 py-8 mx-20'>
+    <div className='columns-3 gap-4 px-4 py-8 md:mx-10 lg:mx-20'>
       {imageList.map((src, index) => (
         <div
           key={index}

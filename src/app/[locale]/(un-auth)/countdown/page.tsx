@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 export default function Countdown() {
   // Target date for the countdown
-  const targetDate = new Date('2024-12-21T00:00:00+07:00').getTime();
+  const targetDate = new Date('2024-12-24T00:00:00+07:00').getTime();
 
   // State to track the remaining time
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
