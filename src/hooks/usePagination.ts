@@ -1,8 +1,7 @@
-import { PAGE_SIZE } from '@/common/constants';
 import { useState } from 'react';
 
 const usePagination = <T>() => {
-  const [pageSize, setPageSize] = useState(PAGE_SIZE);
+  const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalEvents, setTotalEvents] = useState<number>();
   const [apiData, setApiData] = useState<T[]>([]);

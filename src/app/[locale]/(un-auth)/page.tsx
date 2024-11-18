@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import Gallery from '@/components/molecules/Gallery';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const targetDate = new Date('2024-12-21T00:00:00+07:00').getTime();
@@ -47,7 +47,7 @@ export default function Home() {
         <p className='text-gray-600 mt-2'>A little something I made just for you.</p>
       </header>
       <section className='flex flex-col items-center py-8  text-grey'>
-        <h2 className='text-3xl font-semibold mb-4'>Countdown to Dalat 🎄 (GMT+7)</h2>
+        <h2 className='text-3xl font-semibold mb-4'>Countdown to Dalat 🎄</h2>
         <div className='flex space-x-6 text-center text-xl'>
           <div className='flex flex-col items-center'>
             <span className='text-6xl font-bold'>{timeLeft.days}</span>
@@ -70,16 +70,8 @@ export default function Home() {
 
       {/* Photo Gallery */}
       <section className='mb-12'>
-        <h2 className='text-2xl font-semibold text-pink-600 mb-4'>Our Memories</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
-          <Image
-            src='/images/memory1.jpg'
-            width={200}
-            height={200}
-            alt='Memory 1'
-            className='rounded-lg shadow-lg'
-          />
-        </div>
+        <h2 className='text-2xl font-semibold text-pink-600 mb-4 text-center'>Our Memories</h2>
+        <Gallery />
       </section>
 
       {/* Timeline */}
