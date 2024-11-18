@@ -1,0 +1,14 @@
+stages:
+  - deploy
+
+deploy_to_server:
+  stage: deploy
+  script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H 38.60.252.74 >> ~/.ssh/known_hosts
+    - ssh root@38.60.252.74 'cd /root/frontend && git pull && docker compose up -d --build'
+
+  only:
+    - main  # Adjust branch if needed

@@ -1,0 +1,14 @@
+{
+  "UNSUPPORTED": {
+    "TITLE": "Công Cụ Hiện Chưa Hỗ Trợ Trên Thiết Bị Này",
+    "SUB_TITLE": "Vui lòng truy cập từ máy tính để bàn hoặc laptop để sử dụng đầy đủ tính năng."
+  },
+  "HEADER": {
+    "HOME": "Home",
+    "BOOKING_TICKET": "Ticket",
+    "DISCOVER": "Discover",
+    "CONTACT": "Contact",
+    "vi": "Vietnamese",
+    "en": "English"
+  }
+}

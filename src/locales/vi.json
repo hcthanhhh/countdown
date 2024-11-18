@@ -1,0 +1,69 @@
+{
+  "UNSUPPORTED": {
+    "TITLE": "Công Cụ Hiện Chưa Hỗ Trợ Trên Thiết Bị Này",
+    "SUB_TITLE": "Vui lòng truy cập từ máy tính để bàn hoặc laptop để sử dụng đầy đủ tính năng."
+  },
+  "HEADER": {
+    "HOME": "Trang chủ",
+    "BOOKING_TICKET": "Đặt vé",
+    "DISCOVER": "Khám phá",
+    "CONTACT": "Liên hệ",
+    "vi": "Tiếng Việt",
+    "en": "Tiếng Anh"
+  },
+  "HOME": {
+    "BANNER": {
+      "TITLE": {
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      "DESCRIPTION": "",
+      "BUTTON": {
+        "TICKET": "",
+        "DISCOVER": ""
+      },
+      "TAG": {
+        "WORK": ""
+      }
+    },
+    "EVENT": {
+      "TITLE": {
+        "1": "",
+        "2": ""
+      },
+      "DESCRIPTION": ""
+    },
+    "PROMOTE": {
+      "TITLE": {
+        "1": "",
+        "2": ""
+      },
+      "DESCRIPTION": ""
+    },
+    "SERVICE": {
+      "TITLE": {
+        "1": "",
+        "2": ""
+      },
+      "DESCRIPTION": ""
+    },
+    "USER_REVIEW": {
+      "TITLE": {
+        "1": "",
+        "2": ""
+      },
+      "DESCRIPTION": ""
+    },
+    "EMAIL_REGISTER": {
+      "TITLE": {
+        "1": "",
+        "2": ""
+      },
+      "DESCRIPTION": ""
+    }
+  },
+  "TICKET": {},
+  "DISCOVER": {},
+  "CONTACT": {}
+}

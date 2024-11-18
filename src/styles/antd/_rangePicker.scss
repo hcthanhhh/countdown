@@ -1,0 +1,9 @@
+.ant-picker-range {
+  .ant-picker-separator,
+  .ant-picker-suffix {
+    @apply text-primary #{!important};
+  }
+}
+.ant-picker .ant-picker-separator {
+  @apply text-black #{!important};
+}

@@ -1,0 +1,14 @@
+.anticon-left,
+.anticon-right {
+  @apply text-primary;
+}
+.ant-table-wrapper table,
+.ant-table {
+  @apply font-system #{!important};
+}
+th.ant-table-cell {
+  @apply text-gray-500 uppercase text-xs #{!important};
+  &::before {
+    display: none;
+  }
+}
