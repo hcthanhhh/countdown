@@ -31,10 +31,7 @@ const checkPublicPages = (pathname: string) => {
 export default withAuth(
   function middlewareNextAuth(req) {
     const pathname = req.nextUrl.pathname;
-    const token = req.nextauth.token;
-    if (pathname === ROUTES_FE.LOGIN && !token) {
-      return NextResponse.redirect(new URL(ROUTES_FE.ROOT, req.url));
-    }
+    // const token = req.nextauth.token;
 
     if (!checkPublicPages(pathname)) {
       return NextResponse.redirect(new URL(ROUTES_FE.ROOT, req.url));

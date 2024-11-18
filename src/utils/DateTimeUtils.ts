@@ -1,5 +1,4 @@
 import { DATE_FORMAT } from '@/common/constants';
-import { EGranularity } from '@/common/enums';
 import type { Dayjs } from 'dayjs';
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';

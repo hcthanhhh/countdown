@@ -3,13 +3,10 @@ import querystring from 'querystring';
 
 import { HttpMethod, StatusCode } from '@/common/enums';
 import type { HttpRequest } from '@/interfaces/common.interfaces';
-import { localStorageService } from './Storage';
 
 export default class HttpUtils {
   static async request<TDataResponse = any>(init: HttpRequest, isFormData = false) {
     const session = await getSession();
-    // TODO
-    const localAnything = localStorageService.loadFromLocalStorage('anything???');
 
     try {
       const defaultHeaders = {

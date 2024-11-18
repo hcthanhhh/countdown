@@ -1,7 +1,7 @@
 // services/LocalStorageService.ts
 
 const CONFIG = {
-  prefix: 'INFINIX',
+  prefix: 'countdown',
 } as const;
 
 type PrefixType = typeof CONFIG.prefix;
